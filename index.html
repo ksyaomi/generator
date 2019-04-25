@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="ГЕНЕРАТОР НИКОВ ДЛЯ ВЛАДЕЛЬЦЕВ КСЯОМИ">
+	<meta name="author" content="sevenreasons">
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  	<script src="tools.js"></script> <!-- thanks to browserling -->
+  	<script src="randexp.min.js"></script> <!-- thanks to fent -->
+  	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<title>ГЕНЕРАТОР НИКОВ ДЛЯ ВЛАДЕЛЬЦЕВ КСЯОМИ</title>
+</head>
+
+<body id="background">
+
+<div class="flex-container">
+
+<button id="logo" class="box-1" input type="submit">ГЕНЕРАТОР НИКОВ ДЛЯ ВЛАДЕЛЬЦЕВ КСЯОМИ</button>
+
+<textarea id="text-from-regex-text" class="box-2" readonly="yes"></textarea>
+
+<!-- Generated output area  -->
+<input id="text-from-regex-regex" type="hidden" value="(Предпрениматель|Подзаборный|Скитающийся|Бродячий|Подъездный|Кредитный|(Дилдомий?|Кс[яеи]ом[ие]й) (аль|ибн|von|de|le)|Нищий|Помойный|Бездомный|Вонючий|Дилдом(и|ан)( de)?) (Роллтон|Бизне(\$\$|с|\$\$мЭн)|Доши(к|рак)|Нищук|Бродяга|Бомж(а|арик|ара)?|Му[$с]ор|Куколд|Нище(бляд(ун|ок)|ёб)|Кс[яие]ом[ие]лу[дт]ше|Петух(ан)?|Говно(ед|ёб|сос|клюв|жоп|рук|ног|чмо)|Чмохен|Китае(ц|дебил|ёб|нищук)|Минет[чщ]ик|Беруврот|Обосс(ышь?|ака|анец|анус)|(Без|Никаких)переплат|Шаомист|Сиомист|Школ(яр|ьник|оёб)|Жопо(трах|нюх|лиз)|Гомо(гей|сек|пид[оа]р)|Звер[ёе]к|Какслон|Нинужна)"> 
+
+<button type="submit" class="box-3" id="text-from-regex-submit" class="noselect" input type="submit">РЯЯЯЯЯЯЯЯЯЯ ПИРИПЛАТА!!</button>
+
+<button id="btnCopy" class="box-4" data-text-swap="ГОТОВО НАХУЙ">ДОВОЛЕН КАК СЛОН (СКОПИРОВАТЬ)</button>
+
+
+<!-- <script> // COPY BUTTON SWAP // 2FIX
+var button = document.getElementById("btnCopy");
+button.addEventListener('click', function() {
+  if (button.getAttribute("data-text-swap") == button.innerHTML) {
+    button.innerHTML = button.getAttribute("data-text-original");
+  } else {
+    button.setAttribute("data-text-original", button.innerHTML);
+    button.innerHTML = button.getAttribute("data-text-swap");
+  }
+}, false);
+</script> -->
+
+<script> // COLOR CHANGE SNIPPET 
+		setInterval(function(){
+			var x = Math.round( Math.random() *255 );
+			var y = Math.round( Math.random() *255 );
+			var z = Math.round( Math.random() *255 );
+			var bg = "color:rgb("+x+", "+y+", "+z+");";
+			var element = document.getElementById("text-from-regex-submit");
+			element.style = bg;
+		}, 30); //1s = 1000
+</script>
+
+<script> // Copy button
+
+	const textarea = document.getElementById('text-from-regex-text');
+	const btnCopy = document.getElementById('btnCopy');
+	btnCopy.onclick = function () {
+		textarea.select();
+		document.execCommand("Copy");
+	}
+</script>
+
+
+
+<input id="text-from-regex-how-many" type="hidden" value="3" size="3">
+
+
+</div>
+</body>
+</html>

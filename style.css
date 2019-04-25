@@ -1,0 +1,69 @@
+body{
+	background: #FFF
+
+}
+
+.flex-container {
+  display: flex;
+  /*height: 70vh; */
+  /*max-height: 30rem;*/
+  height: 16.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+.box-2 { /* generated output area */
+	width: 18.5rem;
+	height: 3.5rem;
+	border:0.2rem solid black;
+	background-color: transparent;
+	transition: 0s;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	resize: none;
+	overflow: hidden;
+}
+
+.box-1, .box-3, .box-4 { /*1-logo, 3-release, 4-copy*/
+	width: 18.5rem;
+	height: 3rem;
+	border:0.2rem solid black;
+	background-color: transparent;
+	transition: 0s;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+	font-weight: bold;
+	user-select: none;
+	color: black;
+	/*NOSELECT*/
+	  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.box-4:hover {
+	background: none;
+	color: #9a9a9a;
+}
+
+
+::selection {
+  background: #9a9a9a; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #9a9a9a; /* Gecko Browsers */
+}
+
+/* No glow */
+button:focus {outline:0;}
+input:focus {outline:0;}
+textarea:focus {outline:0;}
